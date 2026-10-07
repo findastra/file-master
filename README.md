@@ -44,6 +44,13 @@ powershell -ExecutionPolicy Bypass -File .\scripts\Undo-FileMasterPlan.ps1 -Undo
 Why `-ExecutionPolicy Bypass`? Windows blocks `.ps1` scripts by default. Bypass
 allows just this one run without changing the setting for the whole PC.
 
+### What's a dry run?
+
+A rehearsal. The plan script prints exactly what it *would* move or rename, then stops
+without changing anything. Always dry-run first. It catches surprises, like a rename whose
+target name already exists, while undoing still costs nothing. Add `-Apply` only once
+the dry-run output looks right.
+
 ### Plan actions
 
 | Action | What happens |
