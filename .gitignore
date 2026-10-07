@@ -1,0 +1,4 @@
+# Scan output contains personal file paths. Never commit it.
+reports/
+config/*.local.json
+*.jsonl

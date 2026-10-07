@@ -1,0 +1,49 @@
+﻿{
+    "roots":  [
+                  "%USERPROFILE%\\Desktop",
+                  "%USERPROFILE%\\Documents",
+                  "%USERPROFILE%\\Downloads",
+                  "%USERPROFILE%\\Pictures",
+                  "%USERPROFILE%\\Videos"
+              ],
+    "projectRoots":  [
+                         "%USERPROFILE%\\Documents\\Projects"
+                     ],
+    "driveRoots":  [
+                       "C:\\"
+                   ],
+    "skipDirs":  [
+                     "node_modules",
+                     ".git",
+                     "Library",
+                     "Temp",
+                     "obj",
+                     "bin",
+                     ".venv",
+                     "venv",
+                     "__pycache__",
+                     ".pnpm-store",
+                     "PackageCache",
+                     "Logs",
+                     "ClientSimStorage",
+                     ".standalone_user_data",
+                     "$RECYCLE.BIN",
+                     "System Volume Information",
+                     "_file-master-holding"
+                 ],
+    "skipPaths":  [
+
+                  ],
+    "preferKeepUnder":  [
+
+                        ],
+    "duplicateMinMB":  20,
+    "largeFileMB":  500,
+    "emergingProjectDays":  21,
+    "staleProjectDays":  60,
+    "maxGitScanDepth":  5,
+    "repoLargeFileMB":  50,
+    "logPileThreshold":  5,
+    "installerHome":  "%USERPROFILE%\\Downloads\\installers",
+    "holdingFolderName":  "_file-master-holding"
+}
