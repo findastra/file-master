@@ -8,3 +8,4 @@ To start: "Take the next open card for <you | any> in findastra/file-master."
 | Card | For | Status |
 | --- | --- | --- |
 | [001: Pet naming check in the scanner](001-any-pet-naming-scan.md) | any | open |
+| [002: Fuzzbois folders on the PC](002-file-master-fuzzbois-folders.md) | file-master | open |
