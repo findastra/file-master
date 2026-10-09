@@ -34,6 +34,38 @@ with `-ExecutionPolicy Bypass` because the PC's script policy is Restricted:
 5. To change anything, write the proposed rows into the plan (or a new plan CSV with the
    same columns), show the user the list, and get an explicit yes. Then dry-run, then `-Apply`.
 
+## Pet apps: names to use
+
+Astra's pet app projects (any folder with a `pet.json`) share one vocabulary, kept by the Friendly
+Farmer in `findastra/astras-pet-apps/PET-WORDS.md` (or a local clone of that repo under `Documents\Projects`).
+Read it before proposing anything inside a pet project, and use these words in reports and plans:
+
+- **pet app**: the whole set (one repo, one pet, its app). **pet**: the character.
+- **app**: the full window the pet opens (a web app or a Windows app). Not "pet interface" or "browser companion".
+- **desktop pet**: the pet that sits on the Windows desktop. Not "pet app icon" or "desktop companion".
+- **bubble**: the pet's pop-up line. **quick chat**: the box you type into. **app icon**: the still taskbar picture.
+- **pet well**: the pet's square inside its app.
+
+File names for **new** pet files (`<date>` is Astra's America/Denver date, `YYYYMMDD`):
+
+| Part | File |
+|---|---|
+| web app | `<repo>-<date>.html` |
+| sprite | `sprite-<date>.json` with art in `art/` (or `pet-sprite-<date>.json` with `pet-art/` in repos that already use that; one pattern per repo) |
+| desktop pet | `desktop-pet-<date>.<ext>`, started by `start-desktop-pet-<date>.cmd` |
+| app icon | `icon-<date>.png`, plus `icon-<date>.ico` for Windows |
+| card | `handoffs/NNN-<for>-<short-name>.md` |
+
+How to apply them:
+
+- In a pet project, report an untracked file whose name uses an old word (for example
+  `pet-interface.html`, `app-icon-chat.png`, `dock.cmd`) under **Pet naming**, with the new name as
+  the Destination. These are suggestions; ask before renaming.
+- **Never rename a tracked file in a pet repo** to match these names. Links, tags and the Cage's
+  registry point at the existing names. Report it as a note instead.
+- Do not mix both sprite patterns in one repo. If a repo has both `art/` and `pet-art/`, report it.
+- When PET-WORDS.md changes, these words change with it: the Farmer's file wins over this list.
+
 ## Hard rules
 
 - Never delete files. Use the Quarantine action, which moves files into

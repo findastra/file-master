@@ -5,7 +5,7 @@
   "sprite": "pet-sprite-20261008.json",
   "art_key": "file-master",
   "job": "Keeps a Windows PC organized: read-only audits and approval-based cleanup plans with undo. Never deletes.",
-  "runs_on": "Modern browser for the pet interface; original application requirements remain in README.md.",
+  "runs_on": "Windows for the scanner and plans; a modern browser for the web app; original application requirements remain in README.md.",
   "entry": "file-master-20261008.html",
   "status": "growing",
   "cage": {
