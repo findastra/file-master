@@ -1,0 +1,18 @@
+{
+  "pet": "File Master",
+  "kind": "pet-app",
+  "owner": "Astra",
+  "sprite": "pet-sprite-20261008.json",
+  "art_key": "file-master",
+  "job": "Keeps a Windows PC organized: read-only audits and approval-based cleanup plans with undo. Never deletes. The repo exists; it still needs pet.json and the pet-app topic.",
+  "runs_on": "Modern browser for the pet interface; original application requirements remain in README.md.",
+  "entry": "file-master-20261008.html",
+  "status": "growing",
+  "cage": {
+    "topic": "pet-app",
+    "home": "https://github.com/findastra/astras-pet-apps"
+  },
+  "version": "0.1.0-20261008-pets",
+  "source": "https://github.com/findastra/file-master/tree/v0.1.0-20261008-pets",
+  "built_with": "OpenAI Codex (GPT-6), 2026-10-08"
+}
