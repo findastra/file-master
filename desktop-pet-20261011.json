@@ -8,15 +8,16 @@
   "sparkles": false,
   "renderer": "astras-pet-apps/scripts/desktop-pets-20261011.cs",
   "art_files": [
-    "desktop-art/file-master/idle-20261011.png",
+    "desktop-art/file-master/alarmed-20261011.png",
     "desktop-art/file-master/blink-20261011.png",
-    "desktop-art/file-master/happy-20261011.png",
     "desktop-art/file-master/curious-20261011.png",
-    "desktop-art/file-master/worried-20261011.png",
+    "desktop-art/file-master/happy-20261011.png",
+    "desktop-art/file-master/idle-20261011.png",
     "desktop-art/file-master/sad-20261011.png",
     "desktop-art/file-master/sick-20261011.png",
-    "desktop-art/file-master/alarmed-20261011.png",
-    "desktop-art/file-master/sleep-20261011.png"
+    "desktop-art/file-master/sleep-20261011.png",
+    "desktop-art/file-master/worried-20261011.png"
   ],
-  "notes": "Manila folder; height 42.3 logical pixels, 20% larger than prior .6 scale."
+  "notes": "Manila folder; height 42.3 logical pixels, 20% larger than prior .6 scale.",
+  "source_sheet": "desktop-art/file-master/sheet-20261011.png"
 }

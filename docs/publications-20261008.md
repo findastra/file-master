@@ -25,3 +25,5 @@ The new standalone entry is not separately verified as a hosted website. A tag o
 Keep both tags immutable. If the browser reviewer fails, preserve the original CSV and use the existing application's documented review process. Do not execute a plan whose approvals are uncertain. Fix defects in a new commit and tag instead of force-pushing a rollback or resetting shared main.
 
 2026-10-11: Desktop artwork/size update prepared for publication; see ../desktop-pet-20261011.json. No new app integrations claimed.
+
+Desktop art follow-up (2026-10-11): Manila folder; height 42.3 logical pixels, 20% larger than prior .6 scale. Source frames and runtime handoff are recorded in desktop-pet-20261011.json. Prepared by OpenAI Codex (GPT-6), 2026-10-11.
