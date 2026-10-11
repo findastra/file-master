@@ -106,3 +106,5 @@ Version [v0.1.1-20261008-pets](https://github.com/findastra/file-master/tree/v0.
 
 ## Desktop pet update - 2026-10-11
 Latest desktop size: 20% larger than prior half-size multiplier. Desktop artwork status: draft. Manifest: [desktop-pet-20261011.json](desktop-pet-20261011.json). The native companion renders this art; existing browser interface behavior is unchanged. Generated character artwork uses OpenAI image generation; source sheets and derived frames are included where applicable. Public credit: Astra. Integrated by OpenAI Codex (GPT-6).
+
+Desktop appearance draft updated 2026-10-11: see [desktop details](desktop-pet-20261011.json). This changes the desktop pet, not application features.

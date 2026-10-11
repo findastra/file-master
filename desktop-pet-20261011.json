@@ -1,14 +1,22 @@
 {
-  "desktop_scale": 0.6,
-  "alpha": "Desktop renderer thresholds partial alpha to prevent magenta color-key flecks",
+  "pet": "file-master",
+  "creator": "Astra",
+  "assistant": "OpenAI Codex (GPT-6)",
+  "date": "2026-10-11",
+  "status": "draft",
+  "desktop_scale": 0.72,
   "sparkles": false,
   "renderer": "astras-pet-apps/scripts/desktop-pets-20261011.cs",
-  "status": "draft",
-  "date": "2026-10-11",
-  "art_files": [],
-  "creator": "Astra",
-  "scale_reference": "Standard 58.75 logical-pixel height, with aspect-ratio width clamp before scaling",
-  "assistant": "OpenAI Codex (GPT-6)",
-  "notes": "Latest desktop size: 20% larger than prior half-size multiplier.",
-  "pet": "file-master"
+  "art_files": [
+    "desktop-art/file-master/idle-20261011.png",
+    "desktop-art/file-master/blink-20261011.png",
+    "desktop-art/file-master/happy-20261011.png",
+    "desktop-art/file-master/curious-20261011.png",
+    "desktop-art/file-master/worried-20261011.png",
+    "desktop-art/file-master/sad-20261011.png",
+    "desktop-art/file-master/sick-20261011.png",
+    "desktop-art/file-master/alarmed-20261011.png",
+    "desktop-art/file-master/sleep-20261011.png"
+  ],
+  "notes": "Manila folder; height 42.3 logical pixels, 20% larger than prior .6 scale."
 }

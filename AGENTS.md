@@ -9,3 +9,5 @@ Web app and art integration: OpenAI Codex (GPT-6), 2026-10-08.
 Pet words: use one name per part of a pet app, as listed in the Cage's [PET-WORDS.md](https://github.com/findastra/astras-pet-apps/blob/main/PET-WORDS.md). `agent/file-master.md` tells the agent how to apply them to file names. Added with Claude Opus 5.5 (`claude-opus-5-5`), 2026-10-09.
 
 Desktop artwork and size sync: OpenAI Codex (GPT-6), 2026-10-11. Read desktop-pet-20261011.json. No sparkles. Keep draft and approved design status explicit.
+
+Desktop appearance revision by OpenAI Codex (GPT-6), 2026-10-11. See desktop-pet-20261011.json; runtime behavior is in astras-pet-apps.
