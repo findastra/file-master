@@ -23,3 +23,5 @@ The new standalone entry is not separately verified as a hosted website. A tag o
 ## Recovery
 
 Keep both tags immutable. If the browser reviewer fails, preserve the original CSV and use the existing application's documented review process. Do not execute a plan whose approvals are uncertain. Fix defects in a new commit and tag instead of force-pushing a rollback or resetting shared main.
+
+2026-10-11: Desktop artwork/size update prepared for publication; see ../desktop-pet-20261011.json. No new app integrations claimed.
