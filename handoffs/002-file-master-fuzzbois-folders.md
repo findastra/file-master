@@ -7,7 +7,7 @@ needs: agent/file-master.md, findastra/fuzzbois, findastra/fuzzboi-friend
 Two Fuzzboi projects changed on 2026-10-09. Audit the PC folders and write **unapproved plan
 rows** for Astra. Never delete, and move nothing until she approves.
 
-- `C:\Users\audra\Documents\Projects\fuzzbois` is **not a git checkout**. It holds
+- `%USERPROFILE%\Documents\Projects\fuzzbois` is **not a git checkout**. It holds
   `fuzzbois-20261005T034609Z-1-001.zip`, `fuzzboi-696969.png` and `fuzzboi-834975.png`. The real
   project is the public repo `findastra/fuzzbois` (website <https://findastra.github.io/fuzzbois/>).
   Compare the zip's contents with the repo: is anything in it missing from GitHub?
