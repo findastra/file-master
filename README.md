@@ -94,6 +94,36 @@ file names, sizes, dates, the first 16 bytes (for type detection), and hashes. I
 not read document contents.
 
 
+## Tools (2026-10-13)
+
+File Master's pet program is `pet-program-12` (no name assigned yet). Its tools follow the
+[Pet Program Framework](https://github.com/findastra/astras-pet-os/blob/main/PET-PROGRAM-FRAMEWORK.md): each has its own
+tool box on the web app, with its versioned label on the border, ON/OFF and Sick. Both only read; neither changes anything.
+
+### `pet-program-12-v1.0-repo-catcher-v1.0`
+Finds repos on this PC that were never pushed, or hold work GitHub does not have (no commits, no remote, a branch
+never pushed, commits not pushed, branches with no upstream, uncommitted changes), and marks stale ones. Each row
+starts with the folder location (click to open it), then the date it was created; newest at the top.
+
+```powershell
+.\scripts\repo-catcher-20261013.ps1          # writes reports\repo-catcher-<run>\repo-catcher.html and .json
+```
+
+### `pet-program-12-v1.0-new-programs-watch-v1.0`
+Lists programs that are new on this PC, wherever they were installed: the Windows installed-programs list, Start menu
+shortcuts, Microsoft Store apps, and, with Everything, any new `.exe` anywhere (portable programs too). The first run
+records a baseline in `%LOCALAPPDATA%\file-master\known-programs-v1.json`; later runs list what is new since.
+
+```powershell
+.\scripts\new-programs-watch-20261013.ps1     # writes reports\new-programs-<run>\new-programs.html and .json
+```
+
+### Optional downloads for whole-PC search
+Both tools search the whole PC much faster with Everything. Without it, repo-catcher walks your folders and every
+other drive, and new-programs-watch uses the Windows lists only.
+- **Everything** (free, voidtools): https://www.voidtools.com/downloads/ (Everything must be running)
+- **es.exe**, Everything's command-line tool: https://github.com/voidtools/es/releases, or `winget install voidtools.Everything.Cli`
+
 ## File Master web app
 
 *A pet app by Astra.*

@@ -99,4 +99,65 @@
   if (cfg.type === 'paper') {
     const box = card('Original Paper Girl', 'Use the original app directly if it cannot appear in the embedded view.'); link(box, 'Open original Paper Girl', cfg.live, 'button'); const frame = h('iframe', undefined, 'original-app', box); frame.src = cfg.live; frame.title = 'Paper Girl original application'; frame.referrerPolicy = 'no-referrer';
   }
-})();</script></body></html>
+})();</script><style id="fm-toolboxes">
+/* Tool boxes (PET-PROGRAM-FRAMEWORK.md, astras-pet-os): a border, the versioned label on top, everything about the tool inside. */
+fieldset.toolbox{background:var(--panel);border:2px solid var(--accent);border-radius:18px;padding:18px 22px 22px;margin:0;min-width:0}
+fieldset.toolbox>legend{font:600 .9rem ui-monospace,Consolas,monospace;color:var(--accent);padding:0 8px}
+.toolbox .switches{display:flex;flex-wrap:wrap;gap:18px;margin:6px 0 10px}.toolbox .switches label{display:flex;align-items:center;gap:8px;margin:0;color:var(--muted)}
+.toolbox table{border-collapse:collapse;width:100%;margin-top:12px;font-size:.92rem}.toolbox th,.toolbox td{text-align:left;padding:6px 8px;border-bottom:1px solid #3a3544;vertical-align:top}
+.toolbox th{color:var(--muted);font-weight:500}.toolbox td a{word-break:break-all}.toolbox .off{opacity:.45}
+</style>
+<script>
+// Two tools of File Master's pet program (pet-program-12): repo-catcher and new-programs-watch (Astra, 2026-10-13).
+// The scanners are PowerShell scripts that only read. Each box loads that tool's report file and shows it as plain text.
+(function () {
+  const main = document.querySelector('main'); if (!main) return;
+  const el = (tag, text, cls) => { const e = document.createElement(tag); if (text !== undefined) e.textContent = text; if (cls) e.className = cls; return e; };
+  const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
+  const TOOLS = [
+    { id: 'repo-catcher', label: 'pet-program-12-v1.0-repo-catcher-v1.0', file: 'repo-catcher.json',
+      what: 'Finds repos on this PC that were never pushed, or hold work GitHub does not have. Location first, then the date it was created, newest at the top. Click a location to open the folder.',
+      run: '.\\scripts\\repo-catcher-20261013.ps1',
+      cols: [['Location', 'Location', 'Url'], ['Created', 'Created'], ['Last change', 'LastChange'], ['Status', 'Status'], ['Why', 'Why']], rows: (j) => j.Rows || [] },
+    { id: 'new-programs-watch', label: 'pet-program-12-v1.0-new-programs-watch-v1.0', file: 'new-programs.json',
+      what: 'Lists programs that are new on this PC, wherever they were installed: the installed-programs list, Start menu, Store apps, and (with Everything) any new .exe anywhere. Newest first.',
+      run: '.\\scripts\\new-programs-watch-20261013.ps1',
+      cols: [['Program', 'Name'], ['Installed or updated', 'Installed'], ['Version', 'Version'], ['Found in', 'Source'], ['Location', 'Location']], rows: (j) => j.New || [] },
+  ];
+  for (const tool of TOOLS) {
+    const box = el('fieldset', undefined, 'toolbox'); box.id = tool.id;
+    box.appendChild(el('legend', tool.label));
+    const sw = el('div', undefined, 'switches');
+    const on = el('label'); const onBox = el('input'); onBox.type = 'checkbox'; onBox.checked = store('fm-' + tool.id + '-on') !== 'off';
+    on.append(onBox, document.createTextNode('ON'));
+    const sick = el('label'); const sickBox = el('input'); sickBox.type = 'checkbox'; sickBox.checked = store('fm-' + tool.id + '-sick') === 'yes';
+    sick.append(sickBox, document.createTextNode('Sick (broken from my point of view)'));
+    sw.append(on, sick);
+    const body = el('div');
+    const sync = () => { body.classList.toggle('off', !onBox.checked); store('fm-' + tool.id + '-on', onBox.checked ? 'on' : 'off'); store('fm-' + tool.id + '-sick', sickBox.checked ? 'yes' : 'no'); };
+    onBox.onchange = sync; sickBox.onchange = sync;
+    body.appendChild(el('p', tool.what));
+    const how = el('p', undefined, 'muted'); how.append(document.createTextNode('Run it in PowerShell from the file-master folder: '), el('code', tool.run), document.createTextNode(' Read only: it changes nothing. Then load its report: reports\\…\\' + tool.file));
+    body.appendChild(how);
+    const pick = el('input'); pick.type = 'file'; pick.accept = '.json,application/json';
+    const lbl = el('label', 'Load a ' + tool.file + ' report'); lbl.appendChild(pick); body.appendChild(lbl);
+    const out = el('div'); body.appendChild(out);
+    pick.onchange = async () => {
+      out.replaceChildren(); const file = pick.files && pick.files[0]; if (!file) return;
+      let j; try { j = JSON.parse((await file.text()).replace(/^\uFEFF/, '')); } catch (e) { out.appendChild(el('p', 'That file is not a ' + tool.file + ' report.', 'empty')); return; }
+      const rows = tool.rows(j); const meta = j.Meta || j;
+      out.appendChild(el('p', (meta.Run ? 'Run ' + meta.Run + ' · ' : '') + rows.length + ' listed' + (meta.Source ? ' · found by ' + meta.Source : ''), 'muted'));
+      const table = el('table'); const head = el('tr'); for (const [h] of tool.cols) head.appendChild(el('th', h)); table.appendChild(head);
+      for (const r of rows) { const tr = el('tr');
+        for (const [, key, link] of tool.cols) { const td = el('td'); const v = r[key] == null ? '' : String(r[key]);
+          if (link && r[link] && /^file:\/\//.test(r[link])) { const a = el('a', v); a.href = r[link]; td.appendChild(a); } else td.textContent = v; tr.appendChild(td); }
+        table.appendChild(tr); }
+      out.appendChild(table);
+    };
+    box.append(sw, body);
+    box.appendChild(el('p', 'ON/OFF and Sick are saved on this device only for now. The Farm will enforce them (PET-PROGRAM-FRAMEWORK.md, section 4).', 'muted'));
+    main.appendChild(box); sync();
+  }
+})();
+</script>
+</body></html>
