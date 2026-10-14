@@ -1,5 +1,7 @@
 {
   "pet": "File Master",
+  "program": "pet-program-12",
+  "framework": "https://github.com/findastra/astras-pet-os/blob/main/PET-PROGRAM-FRAMEWORK.md",
   "kind": "pet-app",
   "owner": "Astra",
   "sprite": "pet-sprite-20261008.json",
@@ -10,11 +12,47 @@
   "status": "growing",
   "cage": {
     "topic": "pet-app",
-    "home": "https://github.com/findastra/astras-pet-apps"
+    "home": "https://github.com/findastra/astras-pet-os"
   },
   "version": "0.1.1-20261008-pets",
   "source": "https://github.com/findastra/file-master/tree/v0.1.1-20261008-pets",
   "built_with": "OpenAI Codex (GPT-6), 2026-10-08; OpenAI Codex (GPT-6), 2026-10-11",
   "desktop_pet": "desktop-pet-20261011.json",
-  "desktop_art_built_with": "OpenAI Codex (GPT-6), built-in imagegen and native renderer, 2026-10-11"
+  "desktop_art_built_with": "OpenAI Codex (GPT-6), built-in imagegen and native renderer, 2026-10-11",
+  "tools": [
+    {
+      "name": "repo-catcher",
+      "label": "pet-program-12-v1.0-repo-catcher-v1.0",
+      "version": "v1.0",
+      "entry": "scripts/repo-catcher-20261013.ps1",
+      "visibility": "private",
+      "use": "Read only: lists repos on this PC that were never pushed or hold unpushed work, newest first."
+    },
+    {
+      "name": "new-programs-watch",
+      "label": "pet-program-12-v1.0-new-programs-watch-v1.0",
+      "version": "v1.0",
+      "entry": "scripts/new-programs-watch-20261013.ps1",
+      "visibility": "private",
+      "use": "Read only: lists programs that are new on this PC, wherever they were installed."
+    }
+  ],
+  "links": {
+    "third_party": [
+      {
+        "name": "Everything",
+        "url": "https://www.voidtools.com/downloads/",
+        "optional": true
+      },
+      {
+        "name": "es.exe (Everything command line)",
+        "url": "https://github.com/voidtools/es/releases",
+        "optional": true
+      },
+      {
+        "name": "Git",
+        "url": "https://git-scm.com/downloads"
+      }
+    ]
+  }
 }
