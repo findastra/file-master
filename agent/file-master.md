@@ -27,6 +27,10 @@ with `-ExecutionPolicy Bypass` because the PC's script policy is Restricted:
 3. Pay special attention to **emerging projects** (created in the last three weeks). For each,
    check: kebab-case name, git initialized with a first commit, `.gitignore` before the
    first big asset lands, README, a GitHub remote, and assets kept out of the repo.
+   **The folder name must match the GitHub repo name**, and project folders live in
+   `%USERPROFILE%DocumentsAstra's Pet Apps<repo>` (for example the folder for
+   `findastra/astras-pet-os` is `astras-pet-os`, never a retired name such as
+   `findastra-pet-apps` or `astras-pet-apps`). A mismatch goes in the plan as a `Rename` row.
    Offer to do the missing setup steps.
 4. Present findings as: blatant errors first, then wasted space, then suggestions.
    Keep it short and use plain language. Explain *why* something matters when the user
@@ -74,6 +78,10 @@ How to apply them:
   legal, or police documents). Report their location only.
 - Never move things inside a Unity project, a git repo's tracked files, or an app's install
   folder without a specific yes for that item.
+- Never rename or move a project folder while a program is running from it or while it has
+  uncommitted work. Check running processes first (`Get-CimInstance Win32_Process` and look
+  for the folder in each command line). Put the row in the plan with the blocker written in
+  its Reason, and leave it unapproved.
 - Never push purchased or paid assets (avatars, unitypackages, shaders) to GitHub.
 - Never rename a folder that another tool or session is actively using; if a folder changed
   since the scan, re-scan before acting.
