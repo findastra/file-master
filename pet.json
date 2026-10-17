@@ -6,7 +6,7 @@
   "owner": "Astra",
   "sprite": "pet-sprite-20261008.json",
   "art_key": "file-master",
-  "job": "Keeps a Windows PC organized: read-only audits and approval-based cleanup plans with undo. Never deletes.",
+  "job": "Organizes your files and finds systemic errors. Shows every mass change before making it, with undo. Opens or edits programs only after Test Tortoise tests the change and Gatekeeper Goddess and Astra approve it (planned).",
   "runs_on": "Windows for the scanner and plans; a modern browser for the web app; original application requirements remain in README.md.",
   "entry": "file-master-20261008.html",
   "status": "growing",
@@ -54,5 +54,10 @@
         "url": "https://git-scm.com/downloads"
       }
     ]
+  },
+  "audit": {
+    "cadence": "weekly",
+    "subject": "your PC's folders and projects",
+    "needs": "the scanner run on your PC"
   }
 }
