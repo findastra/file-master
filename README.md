@@ -12,6 +12,14 @@ It has three parts:
 | **`file-master` agent** (`agent/file-master.md`) | A Claude Code subagent that runs the scanner, adds judgment, and walks you through fixes | When you ask Claude to "use file-master" |
 | **Weekly routine** | A Claude desktop scheduled task that runs the agent's checklist and sends you a summary | Every Sunday evening while the Claude app is open |
 
+## Pictures
+
+![File Master's program page: import the scanner's plan.csv, review each proposed action and export your approval choices](docs/images/file-master-program-page-20261017.png)
+
+File Master's [program page](https://findastra.github.io/astras-pet-os/apps/file-master-20261008.html) as published in Astra's PetOS.
+
+Screenshots taken 2026-10-17 with GitHub Goldfish's [project-image-generator](https://github.com/findastra/github-goldfish#project-image-generator); added with Claude Opus 5.5 (`claude-opus-5-5`), 2026-10-17.
+
 ## What it checks
 
 - **Duplicates.** Large files stored more than once, found by size plus a partial hash and re-checked with a full SHA-256 before anything moves.
