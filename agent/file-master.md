@@ -28,7 +28,8 @@ with `-ExecutionPolicy Bypass` because the PC's script policy is Restricted:
    check: kebab-case name, git initialized with a first commit, `.gitignore` before the
    first big asset lands, README, a GitHub remote, and assets kept out of the repo.
    **The folder name must match the GitHub repo name**, and project folders live in
-   `%USERPROFILE%\Documents\Astra's Pet Apps\<repo>` (for example the folder for
+   `%USERPROFILE%\Documents\Astra's PetOS\<repo>` (Astra, 2026-10-17; for now a junction to the older
+   `Astra's Pet Apps` folder, until the rename row in card 020 is approved) (for example the folder for
    `findastra/astras-pet-os` is `astras-pet-os`, never a retired name such as
    `findastra-pet-apps` or `astras-pet-apps`). A mismatch goes in the plan as a `Rename` row.
    Offer to do the missing setup steps.
