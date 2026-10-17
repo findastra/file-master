@@ -136,7 +136,7 @@ other drive, and new-programs-watch uses the Windows lists only.
 
 *A pet app by Astra.*
 
-Open [file-master-20261008.html](file-master-20261008.html) in a modern browser, or double-click File Master in Astra's Pet Apps. The nine original pet moods and manifest are included.
+Open [file-master-20261008.html](file-master-20261008.html) in a modern browser, or double-click File Master in Astra's PetOS. The nine original pet moods and manifest are included.
 
 Limits: this web app does not install or start Windows programs. Where an existing web app is available, the Cage opens that app. Draft controls store their data in the current browser and do not imply connected services. Existing application instructions above still apply.
 
@@ -146,3 +146,11 @@ Version [v0.1.1-20261008-pets](https://github.com/findastra/file-master/tree/v0.
 Latest desktop size: 20% larger than prior half-size multiplier. Desktop artwork status: draft. Manifest: [desktop-pet-20261011.json](desktop-pet-20261011.json). The native companion renders this art; existing browser interface behavior is unchanged. Generated character artwork uses OpenAI image generation; source sheets and derived frames are included where applicable. Public credit: Astra. Integrated by OpenAI Codex (GPT-6).
 
 Desktop appearance draft updated 2026-10-11: see [desktop details](desktop-pet-20261011.json). This changes the desktop pet, not application features.
+
+## Limits
+
+What is not done, plainly. From the hub's [intelligence levels](https://github.com/findastra/astras-pet-os/blob/main/INTELLIGENCE-LEVELS.md) (checked 2026-10-17):
+
+- **Program (L1/L2):** ✅ **Made by Astra:** *File Kingdom*: the [scanner, plan and undo tools](https://github.com/findastra/file-master/tree/main/scripts); **Made by others:** Everything, SpaceSniffer
+- **Runtime (L2):** 🟡 **Should:** organize files and find systemic errors; show every mass change before making it, with undo; open or edit programs only after Test Tortoise tests the change and Gatekeeper Goddess and Astra approve it (both planned pets). **Today:** the weekly scan is written
+- **Agentic harness (L3):** 🟡 [Claude Code agent file-master](https://github.com/findastra/file-master/blob/main/agent/file-master.md)

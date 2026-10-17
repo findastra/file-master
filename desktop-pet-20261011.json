@@ -6,7 +6,7 @@
   "status": "draft",
   "desktop_scale": 0.72,
   "sparkles": false,
-  "renderer": "astras-pet-apps/scripts/desktop-pets-20261011.cs",
+  "renderer": "astras-pet-os/scripts/desktop-pets-20261011.cs",
   "art_files": [
     "desktop-art/file-master/alarmed-20261011.png",
     "desktop-art/file-master/blink-20261011.png",
